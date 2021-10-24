@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caeser cipher by KhiU</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="shortcut icon" href="https://uroljon.github.io/Khidirboev/img/icon.png" type="image/x-icon"> 
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="switch">
+                <button id="en">Shifrlash</button>
+                <button id="de">De-shifrlash</button>
+            </div>
+            <div id="encrypt">
+                <h1>Sezar usulida xabaringizni shifrlang :)</h1>
+                <label>Asl ma'lumotni kiriting :</label>
+                <textarea name="" id="original" cols="30" rows="10" placeholder="Shifrlash - harflarni pozitsiyasini almashtirish orqali amalga oshiriladi. Masalan kalit 3 ga teng bo'lsa, 'a' harfi o'zidan keyingi 3-harf ya'ni, 'd' ga o'zgaradi. Shifrlangan xabarni qabul qiluvchi o'qishi uchun unga kalitni ham ayting.
+  Bu yerga shifrlanuvchi ma'lumotni kiriting, Janob."></textarea>
+                <label for="key">Kalitni kiriting:</label>
+                <div class="d-flex">
+                    <input type="number" id="key" placeholder="misol: 5 yoki -4">
+                    <button id="calculate">Hisoblash</button>
+                    <button id="erase">Tozalash</button>
+                </div>
+                <label for="result">Natija :</label>
+                <p id="crypto-result"></p>
+
+                <button class="copyText" onclick="copyShifrmatn()">Nusxalash</button>
+                <div class="footer">
+                    &copy; <a href="../../index.html" target="_blank">Uroljon Khidirboev </a> <span class="sana">2020</span> <br>
+                    <p>Agar xatolik topsangiz <a href="https://t.me/Uroljon_Khidirboev" target="_blank"
+                            style="color: rgb(0, 248, 41); padding-bottom: 10px;">shu yerga</a> murojaat qiling.</p>
+                </div>
+            </div>
+            <div id="decrypt">
+                <h1>Shifrlangan ma'lumotni o'qing :)</h1>
+                <label>Shifrlangan ma'lumotni kiriting :</label>
+                <textarea name="" id="encrypted" cols="30" rows="10"
+                    placeholder="Sezar usuli bo'yicha har bir harf o'ngga yoki chapga kalitdagi qiymat bo'yicha suriladi. Shifrlangan ma'lumotni shu yerga kiriting, Janob. "></textarea>
+                <label for="key2">Kalitni kiriting:</label>
+                <div class="d-flex">
+                    <input type="number" id="key2" placeholder="butun son bo'lsin">
+                    <button id="decypher">Hisoblash</button>
+                    <button id="erase2">Tozalash</button>
+                </div>
+                <label for="result">Natija :</label>
+                <p id="decrypto-result">...</p>
+
+                <button class="copyText" onclick="copyDeshifr()">Nusxalash</button>
+                <div class="footer">
+                    &copy; <a href="../../index.html" target="_blank">Uroljon Khidirboev </a> <span class="sana">2020</span> <br>
+                    <p>Agar xatolik topsangiz <a href="https://t.me/Uroljon_Khidirboev" target="_blank"
+                            style="color: rgb(0, 248, 41); padding-bottom: 10px;">shu yerga</a> murojaat qiling.</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- /*Цезар шифри оддий силжитиш шифрининг бир қисми ҳисобланади. Бу шифрни римлик император Голе Юлий Цезар ўйлаб топган. Шифрлашда матннинг ҳар бир ҳарфи бошқа ҳарф билан қуйидаги қоида асосида алмаштирилади. Ҳарфларни алмаштиришда келаётган ёзув ҳарфларини k-га силжитиб алмаштирилади. Бу эрда М – бутун сон ҳисобланиб, очиқ матни белгисини бирор алфавитдаги ўрни, С – бутун сон бўлиб, шифр белгини бирор алфавитдаги ўрни. C=(M+k)modm, m - алфавит узунлиги. 
+    Дешифрлаш ифодаси эса M=(C-k)modm ифода билан ифодаланади. Юлий Цезар бевосита k = 3 бўлганда ушбу усулдан фойланган.
+    jk 178modda
+    */ -->
+    <script src="main.js"></script>
+   
+</body>
+
+</html>

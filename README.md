@@ -1,4 +1,4 @@
 # Ceasar Cypher
 
-- Pure JS
-- Ineresting encryp/decrypt method of famous Julius Ceasar
+-   Pure JS
+-   Ineresting encryp/decrypt method of famous Julius Ceasar
